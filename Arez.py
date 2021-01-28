@@ -12,14 +12,10 @@ def main():
 def mainmenu():
   if not os.path.exists('smssenderdb.pickle'):
     print("1 STEP => SETUP API SETTINGS")
-  choicest1 = input("""  
-     _     ______  _______  ________                       
-    | |    |    /  |     |         /                
-   |   |   |/ /    |             /    
-  |     |  |  /    |_____      /
-  |-----|  |  \    |         /         
-  |     |  |   \   |_____| /________  
-                            By \033[93m@Ravo_m\033[97m                                
+  choicest1 = input("""\033[1;32m     
+   (`|\/|(` (`[~|\ ||\[~|)
+   _)|  |_) _)[_| \||/[_|\           
+\033[1;0m                                                  
     === main menu ====
     \033[1;33m
     1. Single SMS:   
@@ -44,16 +40,10 @@ def mainmenu():
     print("Please try again")
     mainmenu()
 def apisettings():
-  choicest = input("""
-
-     _     ______  _______  ________                       
-    | |    |    /  |     |         /                
-   |   |   |/ /    |             /    
-  |     |  |  /    |_____      /
-  |-----|  |  \    |         /         
-  |     |  |   \   |_____| /________  
-                            By \033[93m@Ravo_m\033[97m
-
+  choicest = input("""\033[1;32m  
+   Arez System Zone
+   ______________________
+\033[1;0m
   === = Proovl.com API Settings ===
   \033[1;33m
     1. Update Settings:
@@ -88,14 +78,10 @@ def apisettings():
            apisettings()
 
 def singlesms():
-  print ("""    
-     _     ______  _______  ________                       
-    | |    |    /  |     |         /                
-   |   |   |/ /    |             /    
-  |     |  |  /    |_____      /
-  |-----|  |  \    |         /         
-  |     |  |   \   |_____| /________  
-                            By \033[93m@Ravo_m\033[97m               
+  print ("""\033[1;32m 
+   Arez System Zone
+   ______________________
+ \033[1;0m                        
                           
   """)
   try:
@@ -163,13 +149,11 @@ def singlesms():
 
 def bulksms():
   print("\033[H\033[J")
-     _     ______  _______  ________                       
-    | |    |    /  |     |         /                
-   |   |   |/ /    |             /    
-  |     |  |  /    |_____      /
-  |-----|  |  \    |         /         
-  |     |  |   \   |_____| /________  
-                            By \033[93m@Ravo_m\033[97m
+  print (""" \033[1;32m
+   Arez System Zone
+   _______________________
+       \033[1;0m                   
+                          
   """)  
   try:
               with open('smssenderdb.pickle', 'rb') as rfp:
